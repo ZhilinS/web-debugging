@@ -14,7 +14,7 @@ public class Eagles {
      * @param food Count of food
      */
     public void eat(final int food) {
-        this.range = food / 100;
+        this.range += food / 100;
     }
 
     /**
@@ -24,10 +24,11 @@ public class Eagles {
      */
     public int tryToFly(final List<Traveller> travellers) {
         int distance = calculateDistance(travellers);
-        this.range -= distance;
-        if (this.range < 0) {
+        final int distanceToFly = this.range - distance;
+        if (distanceToFly < 0) {
             return 0;
         }
+        this.range -= distance;
         return distance;
     }
 
