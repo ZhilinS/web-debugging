@@ -41,7 +41,6 @@ public class Eagles {
         for (Traveller traveller:travellers) {
             totalWeight += traveller.getWeight();
         }
-
         return totalWeight / 10;
     }
 }
