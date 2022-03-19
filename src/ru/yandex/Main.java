@@ -32,6 +32,6 @@ public class Main {
             distance = eagles.tryToFly(travellers);
         }
 
-        System.out.println("The eagle flew " + distance + " km.");
+        System.out.println("The eagle flew " + distance + " km. Thats a lot!");
     }
 }
