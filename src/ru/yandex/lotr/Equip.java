@@ -3,7 +3,9 @@ package ru.yandex.lotr;
 public final class Equip {
 
     public String item(final String name) {
-        if ("Aragorn".equals(name)) {
+        if ("Frodo".equals(name)) {
+            return "Ring";
+        } else if ("Aragorn".equals(name)) {
             return "Blade";
         } else if ("Legolas".equals(name)) {
             return  "Bow";

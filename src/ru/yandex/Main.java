@@ -15,8 +15,8 @@ public class Main {
         final String aragornItem = equip.item("Aragorn");
 
         // Решаем кто отправится в поход
-        final Traveller frodo = new Traveller(50, "Frodo", frodoItem);
-        final Traveller aragorn = new Traveller(80, "Aragorn", aragornItem);
+        final Traveller frodo = new Traveller(250, "Frodo", frodoItem);
+        final Traveller aragorn = new Traveller(400, "Aragorn", aragornItem);
 
         List<Traveller> travellers = new ArrayList<>();
         travellers.add(frodo);
